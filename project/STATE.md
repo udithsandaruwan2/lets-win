@@ -13,14 +13,14 @@ gates:
   G4: approved 2026-11-04 by human
   G5: pending
   G6: pending
-next_action: "T-001 done on feat/backend/t-001-django-postgres. Next: T-002 (React bootstrap) and/or human commit of T-001."
+next_action: "T-001 and T-002 done. Next: T-003 session auth + CORS (needs both apps)."
 ---
 
 # Project state
 
 ## Current focus
 
-**Build authorized (G4).** **T-001 done** (Django+Postgres+health). Next: T-002 React bootstrap. M1 still needs T-002…T-004.
+**Build authorized (G4).** T-001 + T-002 done. M1 remaining: T-003 (auth) → T-004 (signals stub).
 
 ## Gate log
 

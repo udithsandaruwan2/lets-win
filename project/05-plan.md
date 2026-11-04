@@ -45,7 +45,7 @@
 | ID | Task | Size | Depends | Parallel-safe | Status |
 |---|---|---|---|---|---|
 | T-001 | Bootstrap Django API + Postgres locally | M | — | no | done |
-| T-002 | Bootstrap React/Vite web + Netlify config | M | — | yes (vs T-001) | todo |
+| T-002 | Bootstrap React/Vite web + Netlify config | M | — | yes (vs T-001) | done |
 | T-003 | Session auth + CORS/CSRF for web↔API | M | T-001, T-002 | no | todo |
 | T-004 | Signals list/detail API+UI (empty/fixture) | M | T-003 | no | todo |
 | T-005 | XAUUSD OHLC ingest (1H/4H) | M | T-001 | no | todo |

@@ -5,7 +5,7 @@
 - **Size:** M
 - **Risk:** low
 - **Depends on:** none
-- **Status:** todo
+- **Status:** done
 
 ## Goal
 
@@ -19,9 +19,9 @@
 
 ## Acceptance
 
-- [ ] `npm`/`pnpm` install + dev server works
-- [ ] Production build succeeds
-- [ ] Netlify config file present for later deploy
+- [x] `pnpm` install + scripts work
+- [x] Production build succeeds
+- [x] Netlify config file present for later deploy
 
 ## Out of scope
 
