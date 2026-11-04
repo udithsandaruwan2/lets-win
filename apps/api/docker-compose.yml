@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: lets-win-postgres
+    environment:
+      POSTGRES_DB: letswin
+      POSTGRES_USER: letswin
+      POSTGRES_PASSWORD: letswin
+    ports:
+      - "5434:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U letswin -d letswin"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - lets_win_pg:/var/lib/postgresql/data
+
+volumes:
+  lets_win_pg:

@@ -1,0 +1,9 @@
+"""v1 router placeholder — resources register here in later tasks."""
+
+from django.urls import path
+
+from health.views import HealthView
+
+urlpatterns = [
+    path("health/", HealthView.as_view(), name="health-v1"),
+]
