@@ -6,7 +6,7 @@ One task per file: `T-###-<slug>.md`.
 |---|---|---|---|---|
 | T-001 | Django API + Postgres bootstrap | M | — | done |
 | T-002 | React/Vite + Netlify bootstrap | M | — | done |
-| T-003 | Session auth + CORS/CSRF | M | T-001, T-002 | todo |
+| T-003 | Session auth + CORS/CSRF | M | T-001, T-002 | done |
 | T-004 | Signals list/detail stub | M | T-003 | todo |
 | T-005 | XAUUSD OHLC ingest | M | T-001 | todo |
 | T-006 | PIT feature builder | L | T-005 | todo |

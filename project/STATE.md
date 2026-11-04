@@ -13,14 +13,14 @@ gates:
   G4: approved 2026-11-04 by human
   G5: pending
   G6: pending
-next_action: "T-001 and T-002 done. Next: T-003 session auth + CORS (needs both apps)."
+next_action: "T-003 done locally; push branch; docker compose up for manual test; then T-004 signals stub."
 ---
 
 # Project state
 
 ## Current focus
 
-**Build authorized (G4).** T-001 + T-002 done. M1 remaining: T-003 (auth) → T-004 (signals stub).
+**Build authorized (G4).** T-001…T-003 done. Track progress in `PROGRESS.md`. Next: T-004.
 
 ## Gate log
 

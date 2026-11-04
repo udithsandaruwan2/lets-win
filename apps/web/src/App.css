@@ -3,6 +3,8 @@
   --fg: #e8eee9;
   --muted: #9aa89e;
   --accent: #c4a35a;
+  --panel: #18201c;
+  --danger: #e07a5f;
   --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
     serif;
   --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
@@ -29,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1.25rem 3rem;
-  max-width: 36rem;
+  max-width: 24rem;
 }
 
 .brand {
@@ -49,8 +51,65 @@ h1 {
 }
 
 .lede {
-  margin: 0;
+  margin: 0 0 1.25rem;
   color: var(--muted);
   line-height: 1.5;
   font-size: 1rem;
+}
+
+.login {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid #2a3830;
+}
+
+.login label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.login input {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #33443a;
+  background: #0f1412;
+  color: var(--fg);
+  font: inherit;
+}
+
+.login button,
+.actions button {
+  padding: 0.6rem 0.9rem;
+  border: 0;
+  background: var(--accent);
+  color: #1a1408;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.actions .ghost {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid #33443a;
+}
+
+.error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.9rem;
+}
+
+.login button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

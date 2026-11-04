@@ -1,8 +1,12 @@
 interface PublicEnv {
+  /** Empty string means same-origin / Vite proxy. */
   apiUrl: string;
 }
 
 export function getPublicEnv(): PublicEnv {
-  const apiUrl = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
-  return { apiUrl };
+  const raw = import.meta.env.VITE_API_URL;
+  if (raw === undefined || raw === "") {
+    return { apiUrl: "" };
+  }
+  return { apiUrl: String(raw) };
 }

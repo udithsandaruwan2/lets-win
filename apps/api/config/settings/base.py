@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "health",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -83,8 +84,13 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.IsAuthenticated",
     ],
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework.authentication.SessionAuthentication",
+        "config.authentication.SessionAuthentication401",
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 50,
 }
+
+# SPA session cookies (local + future Netlify↔API). CSRF readable by JS.
+CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_SAMESITE = "Lax"
+CSRF_COOKIE_SAMESITE = "Lax"
