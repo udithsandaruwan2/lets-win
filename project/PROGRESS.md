@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | T-001 Django + Postgres + health | done | `feat/backend/t-001-django-postgres` | `3397aca` | yes |
 | T-002 React/Vite + Netlify shell | done | `feat/frontend/t-002-react-netlify` | `cf68876` | yes |
-| T-003 Session auth + CORS/CSRF + Docker stack | done* | `feat/backend/t-003-session-auth` | (this commit) | pending |
+| T-003 Session auth + CORS/CSRF + Docker stack | done* | `feat/backend/t-003-session-auth` | `2ef2b39` | yes |
 | T-004 Signals list/detail stub | todo | — | — | — |
 
 \*T-003 includes root `docker-compose.yml` for local full-stack testing.
